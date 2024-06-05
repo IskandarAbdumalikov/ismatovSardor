@@ -1,0 +1,136 @@
+header {
+  padding: 10px 0px;
+  background: green;
+  color: white;
+  text-align: center;
+}
+
+#app {
+  height: 100%;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 40px;
+}
+.hero {
+  height: 600px;
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  .telegram {
+    background: #239fdb;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid #239fdb;
+    transition: 0.4s;
+
+  }
+  .instagram {
+    border-radius: 10px;
+    cursor: pointer;
+    background: #f03499;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #f03499;
+    transition: 0.4s;
+
+  }
+  .telefon {
+    border-radius: 10px;
+    cursor: pointer;
+    background: #11CE1F;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid #11CE1F;
+    transition: 0.4s;
+    img{
+        border-radius: 50%;
+    }
+
+  }
+  .telefon:hover{
+    background: white;
+    color: #11CE1F;
+  }
+  .telegram:hover{
+    background: white;
+    color: #239fdb;
+  }
+  .instagram:hover{
+    background: white;
+    color: #f03499;
+  }
+}
+
+.about,.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    h1{
+        font-size: 30px;
+    }
+}
