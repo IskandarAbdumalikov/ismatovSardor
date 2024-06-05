@@ -60,9 +60,8 @@ main {
 
 .links {
   width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   .telegram {
     background: #239fdb;
@@ -77,7 +76,6 @@ main {
     cursor: pointer;
     border: 1px solid #239fdb;
     transition: 0.4s;
-
   }
   .instagram {
     border-radius: 10px;
@@ -92,12 +90,11 @@ main {
     color: white;
     border: 1px solid #f03499;
     transition: 0.4s;
-
   }
   .telefon {
     border-radius: 10px;
     cursor: pointer;
-    background: #11CE1F;
+    background: #11ce1f;
     padding: 10px;
     width: 300px;
     display: flex;
@@ -105,32 +102,45 @@ main {
     gap: 20px;
     font-size: 20px;
     color: white;
-    border: 1px solid #11CE1F;
+    border: 1px solid #11ce1f;
     transition: 0.4s;
-    img{
-        border-radius: 50%;
+    img {
+      border-radius: 50%;
     }
-
   }
-  .telefon:hover{
+  .telefon:hover {
     background: white;
-    color: #11CE1F;
+    color: #11ce1f;
   }
-  .telegram:hover{
+  .telegram:hover {
     background: white;
     color: #239fdb;
   }
-  .instagram:hover{
+  .instagram:hover {
     background: white;
     color: #f03499;
   }
 }
 
-.about,.contacts{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    h1{
-        font-size: 30px;
-    }
+@media (max-width: 1060px) {
+  .links {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 720px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about,
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h1 {
+    font-size: 30px;
+  }
 }
