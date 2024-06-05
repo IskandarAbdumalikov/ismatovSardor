@@ -1,0 +1,20 @@
+header {
+  padding: 10px 10%;
+  background: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  box-shadow: 0px 0px 10px #11ce1f;
+  width: 100%;
+  img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}

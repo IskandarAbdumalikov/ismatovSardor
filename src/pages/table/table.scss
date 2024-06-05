@@ -1,0 +1,25 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+.table__wrapper {
+  overflow: auto;
+  padding: 20px 0px;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-wrap: nowrap;
+}
+
+td,
+th {
+  padding: 10px;
+}

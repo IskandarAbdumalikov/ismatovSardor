@@ -20,14 +20,11 @@ import photo11 from "../../assets/photo11.jpg";
 import photo12 from "../../assets/photo12.jpg";
 import photo13 from "../../assets/photo13.jpg";
 import photo14 from "../../assets/photo14.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div>
-      <header>
-        <h1>Ismatov Sardor</h1>
-        <img width={30} src={photo9} alt="" />
-      </header>
       <main className="container">
         <div className="hero">
           <Swiper
@@ -97,6 +94,9 @@ const Home = () => {
               Men 2007 yil 14 - yanvarda Jizzax viloyati Zomin tumani Kultepa
               qishlog`ida tug`ilganman.
             </p>
+            <Link to={"/table"}>
+              Sinfdoshlarim haqida ma`lumot olish uchun bu yerni bosing...
+            </Link>
           </div>
         </div>
         <section className="contacts">
