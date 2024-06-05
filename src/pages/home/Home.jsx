@@ -15,12 +15,18 @@ import photo6 from "../../assets/photo6.jpg";
 import photo7 from "../../assets/photo7.jpg";
 import photo8 from "../../assets/photo8.jpg";
 import photo9 from "../../assets/photo9.jpg";
+import photo10 from "../../assets/photo10.jpg";
+import photo11 from "../../assets/photo11.jpg";
+import photo12 from "../../assets/photo12.jpg";
+import photo13 from "../../assets/photo13.jpg";
+import photo14 from "../../assets/photo14.jpg";
 
 const Home = () => {
   return (
     <div>
       <header>
         <h1>Ismatov Sardor</h1>
+        <img width={30} src={photo9} alt="" />
       </header>
       <main className="container">
         <div className="hero">
@@ -65,6 +71,21 @@ const Home = () => {
             <SwiperSlide>
               <img style={{ width: "100%" }} src={photo9} alt="" />
             </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ width: "100%" }} src={photo10} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ width: "100%" }} src={photo11} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ width: "100%" }} src={photo12} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ width: "100%" }} src={photo13} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img style={{ width: "100%" }} src={photo14} alt="" />
+            </SwiperSlide>
           </Swiper>
         </div>
         <div className="about">
@@ -72,6 +93,10 @@ const Home = () => {
           <hr />
           <div className="informations">
             <h3>Salom meni ismim Sardor familyam Ismatov</h3>
+            <p>
+              Men 2007 yil 14 - yanvarda Jizzax viloyati Zomin tumani Kultepa
+              qishlog`ida tug`ilganman.
+            </p>
           </div>
         </div>
         <section className="contacts">
@@ -91,7 +116,7 @@ const Home = () => {
               Telegram
             </a>
             <a
-              href="https://www.instagram.com/ISMATOVV_571"
+              href="https://www.instagram.com/14ismatov.s"
               target="_blank"
               className="instagram"
             >
@@ -111,6 +136,16 @@ const Home = () => {
               Telefon
             </a>
           </div>
+        </section>
+        <section className="map">
+          <h1>My location</h1>
+          <hr />
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.6462932760037!2d68.63854850699099!3d39.96611282820881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b2339ba8d2ce89%3A0xa5fa41a1c6c608da!2s33-maktab!5e0!3m2!1sen!2s!4v1717601230960!5m2!1sen!2s"
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </section>
       </main>
     </div>
